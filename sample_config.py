@@ -18,11 +18,11 @@ class Config(object):
     # Update channel for Force Subscribe
     UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "")
     # Telegram maximum file upload size
-    MAX_FILE_SIZE = 50000000000000
-    TG_MAX_FILE_SIZE = 2097152000000000
-    FREE_USER_MAX_FILE_SIZE = 50000000000000
+    MAX_FILE_SIZE = 5000000000000000
+    TG_MAX_FILE_SIZE = 209715200000000000
+    FREE_USER_MAX_FILE_SIZE = 5000000000000000
     # chunk size that should be used with requests
-    CHUNK_SIZE = int(os.environ.get("CHUNK_SIZE", 128))
+    CHUNK_SIZE = int(os.environ.get("CHUNK_SIZE", 2048))
     # default thumbnail to be used in the videos
     DEF_THUMB_NAIL_VID_S = os.environ.get("DEF_THUMB_NAIL_VID_S", "https://placehold.it/90x90")
     # proxy for accessing youtube-dl in GeoRestricted Areas
@@ -33,6 +33,6 @@ class Config(object):
     # maximum message length in Telegram
     MAX_MESSAGE_LENGTH = 4096
     # set timeout for subprocess
-    PROCESS_MAX_TIMEOUT = 3600000
+    PROCESS_MAX_TIMEOUT = 360000000
     # watermark file
     DEF_WATER_MARK_FILE = ""
